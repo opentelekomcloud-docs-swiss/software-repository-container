@@ -1,3 +1,8 @@
-=============================================================
-Welcome to the documentation of software-repository-container
-=============================================================
+Software Repository for Containers
+==================================
+
+.. directive_wrapper::
+   :class: container-sbv
+
+   .. service_card::
+      :service_type: swr

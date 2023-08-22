@@ -24,11 +24,21 @@ extensions = [
 
 otcdocs_auto_name = False
 otcdocs_auto_version = False
-otcdocs_search_environment = 'hc_swiss'
 
 project = 'Software Repository for Containers'
 otcdocs_repo_name = 'opentelekomcloud-docs-swiss/software-repository-container'
 # Those variables are required for edit/bug links
+
+# Those variables are needed for indexing into OpenSearch
+otcdocs_doc_environment = ''
+otcdocs_doc_link = ''
+otcdocs_doc_title = ''
+otcdocs_doc_type = ''
+otcdocs_service_category = 'container'
+otcdocs_service_title = 'Software Repository for Containers'
+otcdocs_service_type = 'swr'
+otcdocs_search_environment = 'hc_swiss'
+otcdocs_search_url = "https://opensearch.eco.tsi-dev.otc-service.com/"
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -78,6 +88,8 @@ html_theme = 'otcdocs'
 # further. For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
+    "site_name": "Open Telekom Cloud Swiss Documentation Portal",
+    "logo_url": "https://docs-beta.sc.otc.t-systems.com",
 }
 
 # The name for this set of Sphinx documents.  If None, it defaults to

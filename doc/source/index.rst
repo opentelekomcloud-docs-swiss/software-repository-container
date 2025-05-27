@@ -9,5 +9,6 @@ Software Repository for Container (SWR) provides full lifecycle container image 
 
    .. service_card::
       :service_type: swr
+      :cloud_environment: swiss
       :umn: This document introduces basic concepts of Software Repository for Container and demonstrates how to use SWR features.
       :api-ref: This document describes application programming interfaces (APIs) of Software Repository for Container and provides API parameter description andexample values.

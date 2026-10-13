@@ -25,7 +25,7 @@ Image repositories are used for storing Docker images. An image repository hosts
 Organization
 ------------
 
-Organizations are used to isolate image repositories. With each organization being limited to one company or department, images can be managed in a centralized and efficient manner. A user can access different organizations as long as the user has corresponding permissions. Different permissions, namely read, write, and manage, can be assigned to different users in the same account.
+Organizations are used to isolate image repositories. With each organization being limited to one company or department, images can be managed in a centralized and efficient manner. A user can access different organizations as long as the user has corresponding permissions. Different permissions (read, edit, or manage) can be assigned to different users under the same account.
 
 
 .. figure:: /_static/images/en-us_image_0195122694.png

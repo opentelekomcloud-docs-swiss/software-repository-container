@@ -119,7 +119,7 @@ Example Dockerfile:
 
    # Setting the trigger operation for a sub-image
    ONBUILD ADD . /app/src
-   ONBUILD RUN echo "on build excuted" >> onbuild.txt
+   ONBUILD RUN echo "on build executed" >> onbuild.txt
 
 Basic Syntax of Dockerfile
 --------------------------

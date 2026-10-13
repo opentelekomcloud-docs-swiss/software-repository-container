@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0000001539235197.html
+:original_name: swr_faq_2007.html
 
-.. _en-us_topic_0000001539235197:
+.. _swr_faq_2007:
 
 Why Does a CCE Workload Cannot Pull an Image from SWR and the Message Indicating "Not Logged In" Is Displayed?
 ==============================================================================================================

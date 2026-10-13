@@ -13,47 +13,35 @@ Possible causes are as follows:
 
    **Solution**: Reinstall the container engine.
 
-   -  It is advised to install container engine 1.11.2 or later because earlier versions do not support image push to SWR.
+   -  Only Docker 18.06 or later is supported. Download the corresponding version.
    -  If the container engine client is in a private network, bind an elastic IP address (EIP) to the client. This EIP will allow the client to download installation packages from the website.
 
 2. .. _swr_faq_0016__li1489599133814:
 
-   The temporary login command has expired, or the regional project name, access key (AK), or login key in the command is incorrect, in which case the following error is reported:
+   The temporary login command has expired, or the regional project name, AK, or login key in the command is invalid. Error:
 
    **unauthorized: authentication required**
 
-   **Solution**: Log in to the SWR console. In the navigation pane on the left, choose **My Images**. On the page displayed, click **Upload Through Client**. Then you can find the information on how to obtain a login command.
-
-   a. .. _swr_faq_0016__li48456813192:
-
-      To obtain a temporary login command, click **Generate a temporary login command** and then click |image1| to copy the command.
-
-   b. To obtain a long-term valid login command, click **learn how to obtain a login command that has long-term validity** and follow the instructions.
+   **Solution**: Log in to the SWR console. In the navigation pane, choose **My Images**. On the page displayed, click **Upload Through Client**. Then click |image1| to copy the login command.
 
 3. The image repository address in the login command is incorrect, in which case the following error is reported:
 
-   **Error llgging in to v2 endpoint, trying next endpoint: Get https://{{endpoint}}/v2/: dial tcp: lookup {{endpoint}} on xxx.xxx.xxx.xxx:53 : no such host**
+   **Error logging in to v2 endpoint, trying next endpoint: Get https://{{endpoint}}/v2/: dial tcp: lookup {{endpoint}} on xxx.xxx.xxx.xxx:53 : no such host**
 
    **Solutions**:
 
    a. Change the image repository address in the login command.
-   b. Generate a temporary login command. For detailed instructions, see :ref:`2 <swr_faq_0016__li48456813192>`.
+   b. Generate a temporary login command. For detailed instructions, see :ref:`2 <swr_faq_0016__li1489599133814>`.
 
-4. **x509: certificate has expired or is not yet valid**
+4. **login attempt to http://{{endpoint}}/v2/ failed with status: 404 Not Found**
 
-   The preceding error is reported when the AK/SK in the login command with long-term validity is deleted. In this case, use a valid AK/SK to generate a login command.
+   This error occurs when the long-term AK/SK used in the login command has been deleted or disabled. Generate a new login command using a valid AK/SK pair.
 
 5. **x509: certificate signed by unknown authority**
 
    **Possible Causes**:
 
    The container engine client communicates with SWR through HTTPS. The client verifies the server certificate. If the server certificate is not issued by an authoritative organization, the following error message is displayed: "x509: certificate signed by unknown authority"
-
-
-   .. figure:: /_static/images/en-us_image_0000001137013964.png
-      :alt: **Figure 1** Error x509
-
-      **Figure 1** Error x509
 
    **Solutions**:
 

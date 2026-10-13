@@ -15,11 +15,6 @@ What Is the Bandwidth of SWR?
 
 The bandwidth of SWR dynamically changes based on actual usage.
 
-Is SWR Charged?
----------------
-
-The billing items of SWR include storage space and traffic. Currently, it is free of charge.
-
 Does SWR Support Querying the CPU Architecture (x86 or Arm) of an Image?
 ------------------------------------------------------------------------
 

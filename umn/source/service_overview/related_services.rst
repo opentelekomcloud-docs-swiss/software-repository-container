@@ -5,14 +5,7 @@
 Related Services
 ================
 
-SWR works with other cloud services and requires permissions to access them. For details, see :ref:`Figure 1 <swr_03_0006__fig1799743414113>`.
-
-.. _swr_03_0006__fig1799743414113:
-
-.. figure:: /_static/images/en-us_image_0196304259.png
-   :alt: **Figure 1** Relationship between SWR and other services
-
-   **Figure 1** Relationship between SWR and other services
+SWR works with other cloud services and requires permissions to access them.
 
 -  Cloud Container Engine (CCE)
 

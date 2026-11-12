@@ -2,10 +2,14 @@
 
 .. _swr_01_0006:
 
-Basics of the Container Engine
-==============================
+Basics of Docker
+================
 
-The container engine, namely, Docker, is an open-source engine which allows you to create a lightweight, portable, and self-sufficient container for any application. SWR is compatible with Docker, allowing you to use Docker CLI and APIs to manage your images.
+A container engine is an open-source engine which allows you to create a lightweight, portable, and self-sufficient container for any application.
+
+A container engine is one of the most important Kubernetes components. It is used to manage the lifecycle of images and containers. You can use it to create lightweight, portable, and self-sufficient containers for any application easily.
+
+SWR supports two types of container engines: Docker and containerd. This section uses Docker as an example to describe how to install a container engine and use it to create an image file.
 
 Installing Docker
 -----------------
@@ -16,7 +20,7 @@ Docker is compatible with almost all operating systems. Select a Docker version 
 
 .. note::
 
-   -  Before using SWR to store container images, ensure that the Docker client used to push images to SWR is updated to 1.11.2 or later.
+   -  You can use SWR to store container images. You are advised to download Docker 18.06 or later.
    -  Bind an elastic IP address first if your server runs in a private network as the installation requires Internet connection.
 
 On a device running Linux, run the following commands to quickly install Docker:
@@ -59,7 +63,7 @@ When using a browser to access a containerized application built from a Nginx im
    In the preceding instructions:
 
    -  **FROM**: creates a layer from the base image. A valid Dockerfile must start with a **FROM** instruction. In this example, the **Nginx** image is used as the base image.
-   -  **RUN**: executes a command to create a new layer. One of its syntax forms is RUN <command>. In this example, the **echo** command is executed to display **Hello, SWR!**
+   -  **RUN**: executes a command to create a layer. One of its syntax forms is RUN <command>. In this example, the **echo** command is executed to display **Hello, SWR!**
 
    Save the changes and exit.
 
@@ -119,16 +123,26 @@ This section describes how to compress a container image into a .tar or .tar.gz 
 Importing an Image File
 -----------------------
 
-This section describes how to import an image package as an image using the **docker load** command.
+-  Using a Docker Client
 
-There are two modes:
+   You can use **docker load** to import an image package as an image.
 
-**docker load <** **Path/File name.tar**
+   There are two methods:
 
-**docker load --input** **Path/File name.tar** or **docker load -i** **Path/File name.tar**
+   **docker load <** *Path/File name*\ **.tar**
 
-Sample:
+   **docker load --input** *Path/File name*\ **.tar** or **docker load -i** *Path/File name*\ **.tar**
 
-.. code-block::
+   Example:
 
-   $ docker load --input fedora.tar
+   **docker load --input fedora.tar**
+
+-  Using a containerd Client
+
+   You can run the **ctr images import** command to import an image package as an image.
+
+   **ctr images import path/file-name\ .tar**
+
+   Example:
+
+   **ctr images import fedora.tar**

@@ -14,7 +14,7 @@ Ease of Use
 Security and Reliability
 ------------------------
 
--  SWR supports HTTPS to ensure secure image transmission, and provides multiple security isolation mechanisms between and inside accounts.
+-  SWR uses HTTPS to secure image transmission, and provides multiple isolation mechanisms between and inside accounts to control access to images.
 -  Based on professional storage services, SWR provides highly reliable storage service for your container images.
 
 Image Acceleration

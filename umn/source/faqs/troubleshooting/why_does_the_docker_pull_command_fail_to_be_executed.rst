@@ -5,14 +5,14 @@
 Why Does the **docker pull** Command Fail to Be Executed?
 =========================================================
 
-x509: certificate sigined by unknown authority
-----------------------------------------------
+x509: certificate signed by unknown authority
+---------------------------------------------
 
-**Problem**: When you run the **docker pull** command to pull an image from SWR, error message "x509: certificate signed by unknown certificates" is displayed.
+**Problem**: When you run the **docker pull** command to pull an image from SWR, error message "x509: certificate signed by unknown authority" is displayed.
 
 **Possible Causes**:
 
--  A container engine client and SWR communicate with each other using HTTPS. When the client verifies the server certificate and finds that the root certificate installed on the client is incomplete, the error message "x509: certificate signed by unknown certificates" is displayed.
+-  A container engine client and SWR communicate with each other using HTTPS. When the client verifies the server certificate and finds that the root certificate installed on the client is incomplete, the error message "x509: certificate signed by unknown authority" is displayed.
 -  A proxy is configured on the container engine client.
 
 **Solution**:

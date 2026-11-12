@@ -1,11 +1,11 @@
-:original_name: en-us_topic_0000001488475196.html
+:original_name: swr_faq_1002.html
 
-.. _en-us_topic_0000001488475196:
+.. _swr_faq_1002:
 
 Other FAQs
 ==========
 
--  :ref:`Why Does a CCE Workload Cannot Pull an Image from SWR and the Message Indicating "Not Logged In" Is Displayed? <en-us_topic_0000001539235197>`
+-  :ref:`Why Does a CCE Workload Cannot Pull an Image from SWR and the Message Indicating "Not Logged In" Is Displayed? <swr_faq_2007>`
 
 .. toctree::
    :maxdepth: 1

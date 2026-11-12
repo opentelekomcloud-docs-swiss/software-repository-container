@@ -7,7 +7,7 @@ Overview
 
 SoftWare Repository for Container (SWR) allows you to easily manage the full lifecycle of container images and facilitates secure deployment of images for your applications.
 
-SWR provides private image repositories and fine-grained permission management, allowing you to grant different access permissions, namely, read, write, and edit, to different users.
+SWR provides private image repositories with fine-grained permission management, allowing you to grant different access permissions (read, edit, or manage) to different users.
 
 
 .. figure:: /_static/images/en-us_image_0000001200587685.png
